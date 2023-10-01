@@ -38,10 +38,35 @@
      
 
     <p>Voor meer uitleg over bestandsformaten kun je de video hieronder bekijken.</p>
-    <a href="https://www.youtube.com/watch?v=MvP6zfeBURY">Video over bestandsformaten</a>
-
-
+   
+    <h1>Video via Afbeelding</h1>
     
+    <!-- een afbeelding die als een videoposter fungeert -->
+    <img src="filmpje bestandsformaten.jpg" alt="filmpje" id="video-poster">
+    
+   
+    <video id="video-player" width="640" height="360" controls style="display: none;">
+        <source src="https://www.youtube.com/watch?v=MvP6zfeBURY" type="video/mp4">
+    </video>
+
+  
+    <script>
+        // Haal referenties naar de afbeelding en de videospeler op
+        var poster = document.getElementById("video-poster");
+        var video = document.getElementById("video-player");
+        
+        // Voeg een klikgebeurtenis toe aan de afbeelding
+        poster.addEventListener("click", function() {
+            // Verberg de afbeelding
+            poster.style.display = "none";
+            // Toon de videospeler
+            video.style.display = "block";
+            // Start de video
+            video.play();
+        });
+    </script>
+
+
 
     
     <footer>
