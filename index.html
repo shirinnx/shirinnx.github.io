@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Het eerste begin</title>
-    <link rel="stylesheet" href="opmaak.css"> <!-- Verwijst naar de externe CSS -->
+    <link rel="stylesheet" href="opmaak.css">
   </head>
   <body>
     <!-- Navigatiebalk -->
     <div class="navbar">
-      <a href="index.html">Homepage</a>
-      <a href="binairstelsel.html">Binair stelsel</a>
-      <a href="kleurmodellen.html">Kleurmodellen</a>
-      <a href="Compressie.html">Compressie</a>
-      <a href="Bestandsformaten.html">Bestandsformaten</a>
-      <a href="Algemene Informatie.html">Algemene Informatie</a>
-
-      <!-- Dropdown-menu -->
-      <div class="dropdown">
-        <button class="dropbtn">Meer</button>
-        <div class="dropdown-content">
-          <a href="index.html">Homepage</a>
-          <a href="binairstelsel.html">Binair stelsel</a>
-          <a href="Compressie.html">Compressie</a>
-          <a href="Bestandsformaten.html">Bestandsformaten</a>
-          <a href="Algemene Informatie.html">Algemene Informatie</a>
-        </div>
-      </div>
+      <ul class="top-level-menu">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="binairstelsel.html">Binair stelsel</a></li>
+        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+        <li><a href="Compressie.html">Compressie</a></li>
+        <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
+        
+        <!-- Dropdown-menu met meer opties -->
+        <li>
+          <a href="#">Meer</a>
+          <ul class="second-level-menu">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="binairstelsel.html">Binair stelsel</a></li>
+            <li>
+              <a href="#">New York</a>
+              <ul class="third-level-menu">
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Book a Meeting</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Jobs</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Seattle</a></li>
+          </ul>
+        </li>
+        <li><a href="Algemene Informatie.html">Algemene Informatie</a></li>
+      </ul>
     </div>
 
     <!-- Hoofdinhoud -->
