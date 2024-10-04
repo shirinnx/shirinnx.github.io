@@ -38,7 +38,8 @@ ul.second-level-menu, ul.third-level-menu {
 }
 
 /* Toon submenu bij hover */
-li:hover > ul.second-level-menu, li:hover > ul.third-level-menu {
+ul.top-level-menu > li:hover > ul.second-level-menu,
+ul.second-level-menu > li:hover > ul.third-level-menu {
   display: block;
 }
 
@@ -65,16 +66,19 @@ ul.top-level-menu > li, ul.second-level-menu > li {
   position: relative;
 }
 
-ul.top-level-menu > li > a, ul.second-level-menu > li > a, ul.third-level-menu > li > a {
+ul.top-level-menu > li > a, 
+ul.second-level-menu > li > a, 
+ul.third-level-menu > li > a {
   display: block;
   padding: 10px;
   background-color: #333;
   color: white;
-  text-decoration: none;
 }
 
 /* Hover-effect voor links */
-ul.top-level-menu > li > a:hover, ul.second-level-menu > li > a:hover, ul.third-level-menu > li > a:hover {
+ul.top-level-menu > li > a:hover, 
+ul.second-level-menu > li > a:hover, 
+ul.third-level-menu > li > a:hover {
   background-color: #444;
 }
 
