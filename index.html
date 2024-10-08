@@ -16,27 +16,62 @@
         <li><a href="Compressie.html">Compressie</a></li>
         <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
         
-        <!-- Dropdown-menu met meer opties -->
-        <li>
-          <a href="#">Meer</a>
-          <ul class="second-level-menu">
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li>
-              <a href="#">New York</a>
-              <ul class="third-level-menu">
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Book a Meeting</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Jobs</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Seattle</a></li>
-          </ul>
-        </li>
-        <li><a href="Algemene Informatie.html">Algemene Informatie</a></li>
-      </ul>
-    </div>
+        <div class="container">
+          <h2>Multi-Level Dropdowns</h2>
+          <p>Gebruik dit dropdown-menu om eenvoudig door de verschillende pagina's te navigeren.</p>
+        
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Navigatie
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Hoofdlinks naar andere pagina's -->
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="binairstelsel.html">Binair stelsel</a></li>
+              <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+              <li><a href="Compressie.html">Compressie</a></li>
+              <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
+              <li><a href="Algemene informatie.html">Algemene informatie</a></li>
+        
+              <!-- Submenu "Tutorials" met meerdere niveaus -->
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Tutorials <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="html_tutorial.html">HTML Tutorial</a></li>
+                  <li><a tabindex="-1" href="css_tutorial.html">CSS Tutorial</a></li>
+                  <li class="dropdown-submenu">
+                    <a class="test" tabindex="-1" href="#">Advanced Topics <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="responsive_design.html">Responsive Design</a></li>
+                      <li><a href="web_accessibility.html">Web Accessibility</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="test" href="#">More Advanced Topics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="seo_optimization.html">SEO Optimization</a></li>
+                          <li><a href="performance_tuning.html">Performance Tuning</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <script>
+          $(document).ready(function(){
+            $('.dropdown-submenu a.test').on("click", function(e){
+              $(this).next('ul').toggle();
+              e.stopPropagation();
+              e.preventDefault();
+            });
+          });
+        </script>
+        
+        </body>
+        </html>
+        
 
     <!-- Hoofdinhoud -->
     <div class="main">
