@@ -1,87 +1,56 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!DOCTYPE html> <!--dit is de homepage van mijn site -->
+<html> <!--dit is het html-element-->
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Het eerste begin</title>
+    <title>Het eerste begin</title> <!--de titel die wordt weergegeven-->
     <link rel="stylesheet" href="opmaak.css">
-  </head>
-  <body>
-    <!-- Navigatiebalk -->
-    <div class="navbar">
-      <ul class="top-level-menu">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="binairstelsel.html">Binair stelsel</a></li>
-        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-        <li><a href="Compressie.html">Compressie</a></li>
-        <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
-        
-        <div class="container">
-        
-        
-          <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Navigatie
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <!-- Hoofdlinks naar andere pagina's -->
-              <li><a href="index.html">Homepage</a></li>
-              <li><a href="binairstelsel.html">Binair stelsel</a></li>
-              <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-              <li><a href="Compressie.html">Compressie</a></li>
-              <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
-              <li><a href="Algemene informatie.html">Algemene informatie</a></li>
-        
-              <!-- Submenu "Tutorials" met meerdere niveaus -->
-              <li class="dropdown-submenu">
-                <a class="test" tabindex="-1" href="#">Tutorials <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <a class="test" tabindex="-1" href="index.html">Homgepage<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="responsive_design.html">Responsive Design</a></li>
-                      <li><a href="web_accessibility.html">Web Accessibility</a></li>
-                      <li class="dropdown-submenu">
-                        <a class="test" href="#">More Advanced Topics <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="seo_optimization.html">SEO Optimization</a></li>
-                          <li><a href="performance_tuning.html">Performance Tuning</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <script>
-          $(document).ready(function(){
-            $('.dropdown-submenu a.test').on("click", function(e){
-              $(this).next('ul').toggle();
-              e.stopPropagation();
-              e.preventDefault();
-            });
-          });
-        </script>
-        
+    <meta charset="utf-8">
+    </head>
+    <body>
+     
+        </head>
+        <body>
+       
+        <div class="navbar"> <!--sectie voor de navigatiebalk-->
+          <a href="index.html">Homepage</a>
+          <a href="binairstelsel.html">Binair stelsel</a>
+          <a href="kleurmodellen.html">Kleurmodellen</a>
+          <a href="Compressie.html">Compressie</a>
+          <a href="Bestandsformaten.html">Bestandsformaten</a>
+          <a href="Algemene Informatie.html">Algemene Informatie</a>
+      </div>
+        <!--Inhoud-->
+        <div class="main">
+          <h1>Welkom op mijn site!</h1>
+          <p>Ik ben Shirin Raj. Ik zit in 5 VWO en ik heb gekozen voor het vak informatica. Deze site is een opdracht waar ik hard aan heb gewerkt. Je zult hier informatie vinden over het binaire stelsel, kleurmodellen en veel meer!<p>
+
+
+
+
+       
+       
+ 
+
+
+   
+      <body>
+       
+     
+     
+     
+     
+
+
+      <img src="informatica intro plaatje.jpg" alt="introductie plaatje">
+      <img src="informatica intro plaatje 2.jpg" alt="introductie plaatje" width="410">
+
+
+      <footer>
+          <!--een footer-sectie voor copyrightinformatie-->
+          &copy; 2023 Shirin Raj - Alle rechten voorbehouden.
+      </footer>
+
+
+
+
         </body>
-        </html>
-        
-
-    <!-- Hoofdinhoud -->
-    <div class="main">
-      <h1>Welkom op mijn site!</h1>
-      <p>Ik ben Shirin Raj. Ik zit in 5 VWO en ik heb gekozen voor het vak informatica. Deze site is een opdracht waar ik hard aan heb gewerkt. Je zult hier informatie vinden over het binaire stelsel, kleurmodellen en veel meer!</p>
-
-      <img src="informatica intro plaatje.jpg" alt="introductie plaatje" style="width:100%">
-      <img src="informatica intro plaatje 2.jpg" alt="introductie plaatje 2" width="410">
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      &copy; 2023 Shirin Raj - Alle rechten voorbehouden.
-    </footer>
-  </body>
 </html>
