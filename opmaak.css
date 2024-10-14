@@ -36,7 +36,7 @@ body {
 }
 
 .menu-bar {
-  background-color: var(--color-black);
+  background-color: darkseagreen;
   height: 80px;
   width: 100%;
   display: flex;
