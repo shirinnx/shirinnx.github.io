@@ -28,7 +28,7 @@ body {
 
 .logo {
   color: var(--color-white);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .logo span {
@@ -61,7 +61,7 @@ body {
 }
 
 .menu-bar ul li a {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--color-white);
   text-decoration: none;
 
