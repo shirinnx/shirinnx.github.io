@@ -1,72 +1,58 @@
-<!DOCTYPE html> <!--dit is de tweede pagina van mijn site -->
-<html> <!--dit is het html-element-->
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>het eerste begin</title> <!--de titel die wordt weergegeven-->
-    <link rel="stylesheet" href="opmaak.css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-     
-        </head>
-        <body>
-        <!--sectie voor de navigatiebalk-->
-          <div class="navbar">
-    <a href="index.html">Homepage</a>
-    <a href="binairstelsel.html">Binair stelsel</a>
-    <a href="kleurmodellen.html">Kleurmodellen</a>
-    <a href="Compressie.html">Compressie</a>
-    <a href="Bestandsformaten.html">Bestandsformaten</a>
-    <a href="Algemene Informatie.html">Algemene Informatie</a>
-  </div>
-  
-  <!--inhoud-->
-  <div class="main">
-  <h1>Het Binaire stelsel</h1>
-
-
-  <p>Het binaire stelsel is de ruggengraat van digitale technologie en vormt de basis voor de werking van moderne computers en elektronica. Het binair stelsel is een numeriek systeem dat wordt gebruikt in computers en digitale technologieën. In tegenstelling tot het decimale stelsel, dat gebaseerd is op tien cijfers (0-9), gebruikt het binair stelsel slechts twee cijfers: 0 en 1. Deze cijfers worden "bits" genoemd, afgeleid van "binary digits." Bits worden gebruikt om informatie op te slaan, over te dragen en te verwerken in computers en digitale systemen. 8 bits samen noemen we een ‘’byte’’. Bytes kunnen worden gebruikt om letters, cijfers of kleuren weer te geven. Ook worden ze gebruikt bij rekenkundige bewerkingen en om instructies in computerprogramma's op te slaan. Simpel gezegd zijn bits en bytes de bouwstenen van digitale gegevensverwerking en spelen ze een cruciale rol bij de werking van computers en digitale apparaten.</p>
-
-
-  <h2>Het ASCII-Tabel</h2>
-  <p>Het ASCII-tabel (American Standard Code for Information Interchange) is een coderingssysteem dat numerieke waarden toekent aan tekens zoals letters, cijfers, leestekens en speciale symbolen. Het bevat 128 tekens, elk weergegeven door een unieke binaire code van 7 of 8 bits. ASCII wordt gebruikt in computers en communicatiesystemen over de hele wereld om tekstuele informatie op te slaan en uit te wisselen, om menselijke teksten over te schakelen tot iets wat computers begrijpen. Hieronder kun je het ASCII- tabel zien.</p>
-
-
- 
-
-
-
-
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="opmaak.css" />
+    <title>Shirin</title>
+  </head>
   <body>
+    <!-- Navigation bar with dropdown functionality -->
+    <div class="navbar">
+      <ul class="menu-bar">
+        <li><a href="index.html">Homepage<i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#">Binairstelsel<i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#">Kleurmodellen<i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#">Compressie<i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#">Bestandsformaten<i class="fas fa-caret-down"></i></a></li>
+        <li><a href="#">CPU<i class="fas fa-caret-down"></i></a></li>
 
+        <li class="dropdown">
+          <a href="#">3-lagenmodel<i class="fas fa-caret-down"></i></a>
 
+          <ul class="dropdown-menu">
+            <li><a href="#">Toepassingenlaag</a></li>
+            <li><a href="#">Logische laag</a></li>
 
+            <li class="dropdown-submenu">
+              <a href="#">Fysieke laag<i class="fas fa-caret-right"></i></a>
 
+              <ul class="dropdown-menu-1">
+                <li><a href="#">Processor</a></li>
+                <li><a href="#">Geheugen</a></li>
+                <li><a href="#">Randapparatuur</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Algemene informatie</a></li>
+      </ul>
+    </div>
 
+    <!-- Main content section -->
+    <div class="hero">
+      <h1>Welkom op mijn site!</h1>
+      <p>Ik ben Shirin Raj. Ik zit in 5 VWO en ik heb gekozen voor het vak informatica. Deze site is een opdracht waar ik hard aan heb gewerkt. Je zult hier informatie vinden over het binaire stelsel, kleurmodellen en veel meer!</p>
 
-<img src="ASCII-Table informatica.png" alt="ASCII tabel"> <!--plaatje met het ASCII-tabel-->
+      <!-- Image section -->
+      <img src="informatica intro plaatje.jpg" alt="introductie plaatje">
+      <img src="informatica intro plaatje 2.jpg" alt="introductie plaatje" width="410">
 
-
-
-
-
-
-<!--een spelletje-->
-<section>
-  <h1>Testen of je het Binaire stelsel snapt?</h1>
-  <iframe src="https://games.penjee.com/binary-bonanza/game.php" width="700" height="500" frameborder="no" scrolling="no" ></iframe>
-</section>
-
-
-     
-
-
-<footer>
-  <!--een footer-sectie voor copyrightinformatie-->
-  &copy; 2023 Shirin Raj - Alle rechten voorbehouden.
-</footer>
-
-
-</body>
+      <!-- Footer section -->
+      <footer>
+        &copy; 2023 Shirin Raj - Alle rechten voorbehouden.
+      </footer>
+    </div>
+  </body>
 </html>
